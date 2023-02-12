@@ -26,7 +26,9 @@
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
   "browser": "./dist/index.umd.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "BUILD_ENV=dev npm run build:js -- --watch",
     "build": "rimraf dist && npm run build:types && npm run build:js",
@@ -45,13 +47,12 @@
       "git add"
     ]
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-typescript": "^7.17.12",
-    "@commitlint/cli": "17.0.3",
+    "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "17.0.3",
     "@rollup/plugin-babel": "5.3.1",
     "@rollup/plugin-commonjs": "^22.0.0",
@@ -73,8 +74,7 @@
     "semantic-release": "19.0.3",
     "typescript": "^4.7.2"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "publishConfig": {
     "access": "public"
   }
